@@ -1,0 +1,199 @@
+{
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "http://jsonschema.net",
+  "required": false,
+  "properties": {
+    "pluginLocations": {
+      "type": "object",
+      "required": true,
+      "properties": {
+        "config": {
+          "type": "object"
+        },
+        "course": {
+          "type": "object",
+          "properties": {
+            "_dotLottie": {
+              "type": "object",
+              "required": false,
+              "legend": "dotLottie",
+              "properties": {
+                "_isEnabled": {
+                  "type": "boolean",
+                  "required": true,
+                  "default": true,
+                  "title": "Is enabled",
+                  "inputType": "Checkbox",
+                  "validators": [],
+                  "help": "Controls whether the dotLottie extension is enabled or disabled."
+                },
+                "_fileExtension": {
+                  "type": "string",
+                  "required": true,
+                  "default": "svgz",
+                  "title": "File extension",
+                  "inputType": "Text",
+                  "validators": ["required"],
+                  "help": "The file extension for dotLottie files."
+                },
+                "_imageSrc": {
+                  "type": "string",
+                  "required": true,
+                  "default": "",
+                  "title": "Image source",
+                  "inputType": "Asset:image",
+                  "validators": ["required"],
+                  "help": "The image that preloads the dotLottie file"
+                },
+                "_settings": {
+                  "type": "object",
+                  "required": false,
+                  "legend": "Settings",
+                  "properties": {
+                    "_onScreenPercentInviewVertical": {
+                      "type": "number",
+                      "required": true,
+                      "default": 50,
+                      "title": "On screen percent in view vertical",
+                      "inputType": "Number",
+                      "validators": ["required"],
+                      "help": "The percentage of the dotLottie that needs to be in view vertically to start playing."
+                    },
+                    "autoplay": {
+                      "type": "boolean",
+                      "required": true,
+                      "default": true,
+                      "title": "Autoplay",
+                      "inputType": "Checkbox",
+                      "validators": [],
+                      "help": "Controls whether the dotLottie should autoplay."
+                    },
+                    "loop": {
+                      "type": "boolean",
+                      "required": true,
+                      "default": true,
+                      "title": "Loop",
+                      "inputType": "Checkbox",
+                      "validators": [],
+                      "help": "Controls whether the dotLottie should loop."
+                    },
+                    "count": {
+                      "type": "number",
+                      "required": true,
+                      "default": -1,
+                      "title": "Count",
+                      "inputType": "Number",
+                      "validators": ["required"],
+                      "help": "The number of times the dotLottie should loop. -1 means infinite."
+                    },
+                    "controls": {
+                      "type": "boolean",
+                      "required": true,
+                      "default": false,
+                      "title": "Controls",
+                      "inputType": "Checkbox",
+                      "validators": [],
+                      "help": "Controls whether the dotLottie should have controls."
+                    }
+                  }
+                },
+                "_items": {
+                  "type": "array",
+                  "required": false,
+                  "title": "Lottie Items",
+                  "items": {
+                    "type": "object",
+                    "required": false,
+                    "title": "Items",
+                    "properties": {
+                      "_name": {
+                        "type": "string",
+                        "required": true,
+                        "title": "Name",
+                        "inputType": "Text",
+                        "validators": ["required"],
+                        "translatable": false
+                      },
+                      "_src": {
+                        "type": "string",
+                        "required": true,
+                        "title": "Asset",
+                        "inputType": "Asset",
+                        "validators": ["required"]
+                      },
+                      "_settings": {
+                        "type": "object",
+                        "required": false,
+                        "legend": "Settings",
+                        "properties": {
+                          "_onScreenPercentInviewVertical": {
+                            "type": "number",
+                            "required": true,
+                            "default": 50,
+                            "title": "On screen percent in view vertical",
+                            "inputType": "Number",
+                            "validators": ["required"],
+                            "help": "The percentage of the dotLottie that needs to be in view vertically to start playing."
+                          },
+                          "autoplay": {
+                            "type": "boolean",
+                            "required": true,
+                            "default": true,
+                            "title": "Autoplay",
+                            "inputType": "Checkbox",
+                            "validators": [],
+                            "help": "Controls whether the dotLottie should autoplay."
+                          },
+                          "loop": {
+                            "type": "boolean",
+                            "required": true,
+                            "default": true,
+                            "title": "Loop",
+                            "inputType": "Checkbox",
+                            "validators": [],
+                            "help": "Controls whether the dotLottie should loop."
+                          },
+                          "count": {
+                            "type": "number",
+                            "required": true,
+                            "default": -1,
+                            "title": "Count",
+                            "inputType": "Number",
+                            "validators": ["required"],
+                            "help": "The number of times the dotLottie should loop. -1 means infinite."
+                          },
+                          "controls": {
+                            "type": "boolean",
+                            "required": true,
+                            "default": false,
+                            "title": "Controls",
+                            "inputType": "Checkbox",
+                            "validators": [],
+                            "help": "Controls whether the dotLottie should have controls."
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "contentobject": {
+          "type": "object"
+        },
+        "article": {
+          "type": "object"
+        },
+        "block": {
+          "type": "object"
+        },
+        "component": {
+          "type": "object"
+        }
+      }
+    }
+  }
+}

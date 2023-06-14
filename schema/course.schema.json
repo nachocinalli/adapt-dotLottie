@@ -1,0 +1,141 @@
+{
+  "$anchor": "dotLottie-course",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "$patch": {
+    "source": {
+      "$ref": "course"
+    },
+    "with": {
+      "properties": {
+        "_dotLottie": {
+          "type": "object",
+          "title": "dotLottie",
+          "default": {},
+          "required": ["_level"],
+          "properties": {
+            "_isEnabled": {
+              "type": "boolean",
+              "title": "Enable dotLottie",
+              "description": "Controls whether the dotLottie extension is enabled or disabled",
+              "default": true
+            },
+            "_fileExtension": {
+              "type": "string",
+              "title": "File extension",
+              "description": "The file extension of the dotLottie file",
+              "default": "svgz"
+            },
+            "_imageSrc": {
+              "type": "string",
+              "title": "Image source",
+              "description": "The image that preloads the dotLottie file",
+              "default": "",
+              "_backboneForms": {
+                "type": "Asset",
+                "media": "image"
+              }
+            },
+            "_settings": {
+              "type": "object",
+              "title": "Settings",
+              "properties": {
+                "_onScreenPercentInviewVertical": {
+                  "type": "number",
+                  "title": "On screen percent in view vertical",
+                  "description": "The percentage of the dotLottie that needs to be in view vertically to start playing.",
+                  "default": 50
+                },
+                "autoplay": {
+                  "type": "boolean",
+                  "title": "Autoplay",
+                  "description": "Controls whether the dotLottie should autoplay.",
+                  "default": true
+                },
+                "loop": {
+                  "type": "boolean",
+                  "title": "Loop",
+                  "description": "Controls whether the dotLottie should loop.",
+                  "default": true
+                },
+                "count": {
+                  "type": "number",
+                  "title": "Count",
+                  "description": "The number of times the dotLottie should loop. -1 means infinite.",
+                  "default": -1
+                },
+                "controls": {
+                  "type": "boolean",
+                  "title": "Controls",
+                  "description": "Controls whether the dotLottie should have controls.",
+                  "default": false
+                }
+              }
+            },
+            "_items": {
+              "type": "array",
+              "title": "Items",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "_name": {
+                    "type": "string",
+                    "title": "Name",
+                    "description": "The name of the dotLottie item",
+                    "default": ""
+                  },
+                  "_src": {
+                    "type": "string",
+                    "title": "Source",
+                    "description": "The source of the dotLottie item",
+                    "default": "",
+                    "_backboneForms": {
+                      "type": "Asset",
+                      "media": "image"
+                    }
+                  },
+                  "_settings": {
+                    "type": "object",
+                    "title": "Settings",
+                    "properties": {
+                      "_onScreenPercentInviewVertical": {
+                        "type": "number",
+                        "title": "On screen percent in view vertical",
+                        "description": "The percentage of the dotLottie that needs to be in view vertically to start playing.",
+                        "default": 50
+                      },
+                      "autoplay": {
+                        "type": "boolean",
+                        "title": "Autoplay",
+                        "description": "Controls whether the dotLottie should autoplay.",
+                        "default": true
+                      },
+                      "loop": {
+                        "type": "boolean",
+                        "title": "Loop",
+                        "description": "Controls whether the dotLottie should loop.",
+                        "default": true
+                      },
+                      "count": {
+                        "type": "number",
+                        "title": "Count",
+                        "description": "The number of times the dotLottie should loop. -1 means infinite.",
+                        "default": -1
+                      },
+                      "controls": {
+                        "type": "boolean",
+                        "title": "Controls",
+                        "description": "Controls whether the dotLottie should have controls.",
+                        "default": false
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "adapt-dotLottie",
+  "version": "1.0.0",
+  "framework": ">=5.31.11",
+  "homepage": "https://github.com/nachocinalli/adapt-dotLottie",
+  "bugs": "https://github.com/nachocinalli/adapt-dotLottie/issues",
+  "extension": "dotLottie",
+  "displayName": "dotLottie",
+  "description": "An extension that allows you to use Lottie animations in your Adapt courses.",
+  "main": "/js/adapt-dotLottie.js",
+  "keywords": ["adapt-plugin", "adapt-extension"],
+  "license": "GPL-3.0",
+  "targetAttribute": "_dotLottie",
+  "private": true
+}
