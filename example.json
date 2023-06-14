@@ -1,5 +1,28 @@
-    // course.json
-    "_dotLottie": {
-        "_isEnabled": true      
-    }
-
+{
+  "comment": "Settings in the course.json file",
+  "_dotLottie": {
+    "_isEnabled": true,
+    "_fileExtension": "svgz",
+    "_imageSrc": "course/en/images/single-width.png",
+    "_settings": {
+      "_onScreenPercentInviewVertical": 70,
+      "autoplay": true,
+      "loop": true,
+      "count": -1,
+      "controls": false
+    },
+    "_items": [
+      {
+        "_name": "cat",
+        "_src": "course/en/images/cat.lottie",
+        "_settings": {
+          "_onScreenPercentInviewVertical": 70,
+          "autoplay": true,
+          "loop": true,
+          "count": -1,
+          "controls": false
+        }
+      }
+    ]
+  }
+}
